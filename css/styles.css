@@ -1,0 +1,56 @@
+:root {
+  --title-color: #303030;
+  --text-color: #555555;
+  --light-text-color: #ffffff;
+  --transparent-text-color: #9da4bd;
+  --accent-color: #ff6c00;
+}
+
+body {
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent-color);
+}
+
+.link.logo {
+  color: var(--title-color);
+}
+
+.list {
+  list-style: none;
+}
+
+header .link {
+  color: var(--light-text-color);
+}
+
+aside .link {
+  color: var(--title-color);
+}
+
+address {
+  font-style: normal;
+}
+
+address .link {
+  color: var(--transparent-text-color);
+}
+
+footer .link {
+  color: var(--title-color);
+}
