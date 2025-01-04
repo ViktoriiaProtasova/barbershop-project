@@ -1,13 +1,23 @@
 :root {
+  /* COLORS */
+
   --title-color: #303030;
   --text-color: #555555;
-  --light-text-color: #ffffff;
   --transparent-text-color: #9da4bd;
+  --light-color: #ffffff;
   --accent-color: #ff6c00;
+
+  /* TYPEFACES */
+
+  --heading-font: 'Raleway', sans-serif;
+  --main-font: 'Open Sans', sans-serif;
 }
 
 body {
+  font-family: var(--main-font);
   color: var(--text-color);
+
+  background-color: var(--light-color);
 }
 
 h1,
@@ -16,10 +26,17 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--heading-font);
+  letter-spacing: 0.05em;
   color: var(--title-color);
 }
 
+p {
+  letter-spacing: 0.02em;
+}
+
 .btn {
+  font-family: inherit;
   text-transform: uppercase;
   color: var(--title-color);
   background-color: transparent;
@@ -27,28 +44,25 @@ h6 {
 }
 
 .btn:is(:hover, :focus) {
-  color: var(--light-text-color);
+  color: var(--light-color);
   background-color: var(--accent-color);
 }
 
 .btn.dark {
-  color: var(--light-text-color);
+  color: var(--light-color);
 }
 
 .btn.dark:is(hover, focus) {
-  color: var(--light-text-color);
+  color: var(--light-color);
 }
 
 .link {
   text-decoration: none;
-}
-
-.link:is(:hover, :focus) {
-  color: var(--accent-color);
-}
-
-.link.logo {
   color: var(--title-color);
+}
+
+.link:is(:hover, :focus-visible) {
+  color: var(--accent-color);
 }
 
 .list {
@@ -56,11 +70,23 @@ h6 {
 }
 
 header .link {
-  color: var(--light-text-color);
+  color: var(--light-color);
 }
 
-aside .link {
-  color: var(--title-color);
+.aside {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.overline {
+  letter-spacing: 0;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
 
 address {
@@ -69,8 +95,4 @@ address {
 
 address .link {
   color: var(--transparent-text-color);
-}
-
-footer .link {
-  color: var(--title-color);
 }
