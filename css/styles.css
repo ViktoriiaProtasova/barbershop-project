@@ -125,12 +125,8 @@ p {
 
 /* ============= HEADER ============= */
 
-header .link {
-  color: var(--light-color);
-}
-
-.menu {
-  background-color: var(--primary-text-color);
+header {
+  background-color: #555555;
 }
 
 .menu-link {
@@ -138,10 +134,14 @@ header .link {
   letter-spacing: 0.1em;
   font-weight: 600;
   line-height: 1.33;
+  color: var(--light-color);
 }
 
 /* ============= HERO ============= */
 
+.hero {
+  background-color: #555555;
+}
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
