@@ -45,6 +45,19 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 /* ============= UTILITIES ============= */
 
 .visually-hidden {
@@ -62,8 +75,11 @@ ol {
 
 /* ============= COMPONENTS ============= */
 
+section {
+  padding: 120px 0;
+}
+
 .btn {
-  font-family: inherit;
   min-width: 160px;
   height: 40px;
   padding: 12px 40px;
@@ -75,7 +91,6 @@ ol {
   letter-spacing: 0.09em;
   font-weight: 600;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .btn:is(:hover, :focus) {
@@ -114,7 +129,8 @@ ol {
   font-weight: 600;
 }
 
-.overline {
+.overline,
+.advantages-overline {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
@@ -167,21 +183,91 @@ header {
   color: var(--light-color);
 }
 
+.menu-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
 /* ============= HERO ============= */
 
 .hero {
   background-color: #555555;
+  padding-left: 100px;
+  padding-bottom: 208px;
 }
+
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
 }
 
+/* ============= ABOUT ============= */
+
+.section-title,
+.advantages-title {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.17;
+}
+
+/* ============= SERVICES AND PRICES ============= */
+
+.services {
+  background-color: #555555;
+}
+
+.services-text {
+  color: var(--light-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/* ============= ADVANTAGES ============= */
+
+.advantages-title {
+  color: var(--primary-text-color);
+}
+
+.advantages-overline {
+  text-transform: none;
+  color: var(--primary-text-color);
+}
+
+/* ============= OUR BARBERS ============= */
+
+.barber-master {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.barber-subtitle {
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--accent-color);
+}
+
 /* ============= ONLINE BOOKING ============= */
 
-address {
-  font-style: normal;
+.booking,
+.contacts {
+  background-color: #555555;
+  padding-top: 130px;
+}
+
+.address-text,
+.info-text {
+  color: var(--light-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+.info-text {
+  font-weight: normal;
 }
 
 address .link,
@@ -190,6 +276,10 @@ address .link,
 }
 
 /* ============= FOOTER ============= */
+
+footer {
+  padding: 56px 0;
+}
 
 .copyright {
   color: var(--light-text-color);
