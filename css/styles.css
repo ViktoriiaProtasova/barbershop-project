@@ -56,6 +56,7 @@ button {
 
 address {
   font-style: normal;
+  margin-bottom: 70px;
 }
 
 /* ============= UTILITIES ============= */
@@ -74,6 +75,13 @@ address {
 }
 
 /* ============= COMPONENTS ============= */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 section {
   padding: 120px 0;
@@ -129,6 +137,10 @@ section {
   font-weight: 600;
 }
 
+.overline {
+  margin-bottom: 20px;
+}
+
 .overline,
 .advantages-overline {
   font-size: 11px;
@@ -172,6 +184,8 @@ section {
 /* ============= HEADER ============= */
 
 header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #555555;
 }
 
@@ -199,9 +213,14 @@ header {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+  padding-bottom: 20px;
 }
 
 /* ============= ABOUT ============= */
+
+.section-title {
+  margin-bottom: 20px;
+}
 
 .section-title,
 .advantages-title {
@@ -211,10 +230,31 @@ header {
   line-height: 1.17;
 }
 
+.about .subtitle {
+  margin-bottom: 20px;
+}
+
+.about .text {
+  margin-bottom: 42px;
+}
+
 /* ============= SERVICES AND PRICES ============= */
 
 .services {
   background-color: #555555;
+}
+
+.services .section-title,
+.services-list-wrapper {
+  margin-bottom: 44px;
+}
+
+.services-list {
+  padding: 30px 20px;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .services-text {
@@ -226,30 +266,65 @@ header {
 /* ============= ADVANTAGES ============= */
 
 .advantages-title {
+  display: block;
   color: var(--primary-text-color);
+  margin-bottom: 6px;
+}
+
+.advantages .list-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
 }
 
 .advantages-overline {
   text-transform: none;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 /* ============= OUR BARBERS ============= */
+
+.barber-master-wrapper {
+  padding: 30px 82px 0;
+}
 
 .barber-master {
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .barber-subtitle {
   font-size: 14px;
   line-height: 1.36;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.barbers .section-title {
+  margin-bottom: 44px;
+}
+
+/* ============= WORKS ============= */
+
+.works .overline {
+  margin-bottom: 44px;
 }
 
 /* ============= ONLINE BOOKING ============= */
+
+.booking .section-title {
+  margin-bottom: 44px;
+}
+
+/* ============= CONTACTS ============= */
+
+.contacts .section-title {
+  margin-bottom: 40px;
+}
 
 .booking,
 .contacts {
