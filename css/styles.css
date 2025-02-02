@@ -184,12 +184,37 @@ section {
 /* ============= HEADER ============= */
 
 header {
-  padding-top: 32px;
-  padding-bottom: 32px;
   background-color: #555555;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  margin-right: 130px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
 .menu-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 600;
@@ -201,19 +226,31 @@ header {
   color: var(--accent-color);
 }
 
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
 /* ============= HERO ============= */
 
 .hero {
-  background-color: #555555;
   padding-left: 100px;
   padding-bottom: 208px;
+
+  background-color: #555555;
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  padding-bottom: 20px;
 }
 
 /* ============= ABOUT ============= */
@@ -267,8 +304,8 @@ header {
 
 .advantages-title {
   display: block;
-  color: var(--primary-text-color);
   margin-bottom: 6px;
+  color: var(--primary-text-color);
 }
 
 .advantages .list-item {
@@ -278,9 +315,9 @@ header {
 }
 
 .advantages-overline {
+  margin-bottom: 20px;
   text-transform: none;
   color: var(--primary-text-color);
-  margin-bottom: 20px;
 }
 
 /* ============= OUR BARBERS ============= */
@@ -290,18 +327,20 @@ header {
 }
 
 .barber-master {
+  margin-bottom: 8px;
+
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 
 .barber-subtitle {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.36;
   color: var(--accent-color);
-  margin-bottom: 30px;
 }
 
 .barbers .section-title {
@@ -328,8 +367,9 @@ header {
 
 .booking,
 .contacts {
-  background-color: #555555;
   padding-top: 130px;
+
+  background-color: #555555;
 }
 
 .address-text,
