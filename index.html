@@ -81,8 +81,8 @@
         </div>
       </section>
       <section class="about">
-        <div class="container">
-          <ul class="list">
+        <div class="container about-wrapper">
+          <ul class="list about-image-wrapper">
             <li class="list-item">
               <img
                 src="./images/about/about-img1.jpg"
@@ -100,22 +100,24 @@
               />
             </li>
           </ul>
-          <p class="overline overline-theme-light">About</p>
-          <h2 class="section-title">Best Barbershop in your city</h2>
-          <p class="subtitle subtitle-theme-light">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="btn btn-theme-light">
-            Online-booking
-          </button>
+          <div class="about-info-wrapper">
+            <p class="overline overline-theme-light">About</p>
+            <h2 class="section-title">Best Barbershop in your city</h2>
+            <p class="subtitle subtitle-theme-light">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="btn btn-theme-light">
+              Online-booking
+            </button>
+          </div>
         </div>
       </section>
       <section class="services">
@@ -168,8 +170,8 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="container">
-          <ul class="list">
+        <div class="container advantages-wrapper">
+          <ul class="list advantages-number-wrapper">
             <li class="list-item">
               <span class="advantages-title">600</span>
               <p class="advantages-overline">Satisfied customers per day</p>
@@ -187,14 +189,16 @@
               <p class="advantages-overline">Gifts for regular customers</p>
             </li>
           </ul>
-          <p class="advantages-overline overline-theme-light">
-            Old traditional school
-          </p>
-          <h2 class="section-title">&iquest;Why people come to us?</h2>
-          <p class="subtitle subtitle-theme-light">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="advantages-info-wrapper">
+            <p class="advantages-overline overline-theme-light">
+              Old traditional school
+            </p>
+            <h2 class="section-title">&iquest;Why people come to us?</h2>
+            <p class="subtitle subtitle-theme-light">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
         </div>
       </section>
       <section class="barbers">
@@ -203,7 +207,7 @@
             For true enjoyers of the atmosphere
           </p>
           <h2 class="section-title">Our barbers</h2>
-          <ul class="list">
+          <ul class="list barbers-wrapper">
             <li class="list-item">
               <img
                 src="./images/barbers/john-smith.jpg"
@@ -267,7 +271,7 @@
           <p class="overline overline-theme-light">
             In Latin, "barba" means "beard"
           </p>
-          <ul class="list">
+          <ul class="list works-wrapper">
             <li class="list-item">
               <img
                 src="./images/examples-of-work/example-1.jpg"
@@ -303,44 +307,48 @@
           </ul>
         </div>
       </section>
-      <section class="booking">
-        <div class="container">
-          <h2 class="section-title title-theme-dark">Online-booking</h2>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="container">
-          <h2 class="section-title title-theme-dark">Contacts</h2>
-          <address>
-            <ul class="list">
-              <li class="list-item">
-                <a
-                  href="https://maps.app.goo.gl/r9EjJK3pBZ1xSPhZ7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link address-text"
-                  >Darnytska Square, 1, Kyiv</a
-                >
-              </li>
-              <li class="list-item">
-                <a href="tel:+380441111111" class="link info-text"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="list-item">
-                <a href="mailto:barbershop@email.com" class="el-link info-text"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="overline title-theme-dark">Working hours</p>
-          <p class="info-text">Every day from 9:00 to 22:00</p>
-        </div>
-      </section>
+      <div class="section-wrapper">
+        <section class="booking">
+          <div class="container">
+            <h2 class="section-title title-theme-dark">Online-booking</h2>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <h2 class="section-title title-theme-dark">Contacts</h2>
+            <address>
+              <ul class="list">
+                <li class="list-item">
+                  <a
+                    href="https://maps.app.goo.gl/r9EjJK3pBZ1xSPhZ7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link address-text"
+                    >Darnytska Square, 1, Kyiv</a
+                  >
+                </li>
+                <li class="list-item">
+                  <a href="tel:+380441111111" class="link info-text"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="list-item">
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="el-link info-text"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="overline title-theme-dark">Working hours</p>
+            <p class="info-text">Every day from 9:00 to 22:00</p>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container footer-wrapper">
         <p class="copyright">&copy; Copyright 2020</p>
         <ul class="list follow-list">
           <li class="list-item follow-item">
