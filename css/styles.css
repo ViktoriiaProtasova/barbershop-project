@@ -6,6 +6,7 @@
   --light-text-color: #9da4bd;
   --transparent-text-color: rgba(157, 164, 189, 0.6);
   --light-color: #ffffff;
+  --medium-color: #f7f7f7;
   --accent-color: #ff6c00;
 
   /* TYPEFACES */
@@ -246,8 +247,12 @@ nav {
   display: flex;
 }
 
+.aside {
+  width: 100px;
+}
+
 .hero-content-wrapper {
-  width: 1070px;
+  flex-grow: 1;
   padding-left: 100px;
   padding-top: 272px;
   padding-bottom: 208px;
