@@ -188,7 +188,7 @@ header {
   background-color: #555555;
 }
 
-.header-container {
+.header-wrapper {
   display: flex;
   align-items: center;
 }
