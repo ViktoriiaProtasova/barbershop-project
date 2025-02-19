@@ -91,7 +91,7 @@ address {
 .btn {
   min-width: 160px;
   height: 40px;
-  padding: 12px 40px;
+  padding: 12px 20px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   text-transform: uppercase;
@@ -184,7 +184,9 @@ address {
 
 /* ============= HEADER ============= */
 
-header {
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #555555;
 }
 
@@ -201,8 +203,8 @@ header {
 nav {
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .menu {
@@ -231,8 +233,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 60px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-right: 20px;
   margin-left: auto;
 }
@@ -323,7 +325,7 @@ nav {
 
 .services-list {
   padding: 30px 20px;
-  width: calc(100% - 30px / 2);
+  flex-basis: calc(100% - 30px / 2);
 }
 
 .services-item {
@@ -393,7 +395,7 @@ nav {
 }
 
 .barbers-wrapper .list-item {
-  width: calc(100% - 60px / 3);
+  flex-basis: calc(100% - 60px / 3);
 }
 
 .barber-master-wrapper {
@@ -428,8 +430,8 @@ nav {
   gap: 30px;
 }
 
-..works-wrapper .list-item {
-  width: calc(100% -90px / 4);
+.works-wrapper .list-item {
+  flex-basis: calc(100% -90px / 4);
 }
 
 .works .overline {
