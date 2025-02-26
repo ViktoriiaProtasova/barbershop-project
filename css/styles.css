@@ -243,7 +243,6 @@ nav {
 /* ============= HERO ============= */
 
 .hero {
-  background-color: #555555;
 }
 
 .hero-wrapper {
@@ -256,9 +255,11 @@ nav {
 
 .hero-content-wrapper {
   flex-grow: 1;
-  padding-left: 100px;
+  background-color: #555555;
   padding-top: 272px;
+  padding-right: 100px;
   padding-bottom: 208px;
+  padding-left: 100px;
 }
 
 .hero-content {
