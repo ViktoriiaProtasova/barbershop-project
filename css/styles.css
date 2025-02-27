@@ -263,7 +263,6 @@ nav {
 }
 
 .hero-content {
-  max-width: 444px;
 }
 
 .hero-title {
@@ -272,6 +271,10 @@ nav {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+}
+
+.hero .subtitle {
+  max-width: 360px;
 }
 
 /* ============= ABOUT ============= */
@@ -286,9 +289,14 @@ nav {
   gap: 30px;
 }
 
+.about-item {
+  flex-basis: calc(100% - 30px / 2);
+}
+
 .about-info-wrapper {
   max-width: 470px;
 }
+
 .section-title {
   margin-bottom: 20px;
 }
@@ -343,6 +351,11 @@ nav {
   color: var(--light-text-color);
   font-size: 18px;
   line-height: 1.67;
+}
+
+.services .btn {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ============= ADVANTAGES ============= */
