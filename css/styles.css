@@ -42,7 +42,7 @@ p {
 
 ul,
 ol {
-  margin: 0px;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -242,9 +242,6 @@ nav {
 
 /* ============= HERO ============= */
 
-.hero {
-}
-
 .hero-wrapper {
   display: flex;
 }
@@ -260,9 +257,6 @@ nav {
   padding-right: 100px;
   padding-bottom: 208px;
   padding-left: 100px;
-}
-
-.hero-content {
 }
 
 .hero-title {
