@@ -140,16 +140,12 @@ address {
 }
 
 .overline {
-  margin-bottom: 20px;
-}
-
-.overline,
-.advantages-overline {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0;
+  margin-bottom: 20px;
 }
 
 .overline-theme-light {
@@ -357,25 +353,30 @@ nav {
 .advantages-wrapper {
   display: flex;
   gap: 130px;
+  padding-left: 115px;
 }
 
 .advantages-number-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-left: 100px;
+  flex-shrink: 0;
   width: 370px;
 }
 
-.advantages-number-wrapper .list-item:nth-child(2) {
-  margin-top: 35px;
+.advantages-number-wrapper .list-item {
+  background-color: var(--medium-color);
 }
-.advantages-number-wrapper .list-item:nth-child(3) {
-  margin-bottom: 35px;
+
+.advantages-number-wrapper .list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.advantages-number-wrapper .list-item:nth-child(odd) {
+  margin-right: 30px;
 }
 
 .advantages-info-wrapper {
-  width: 500px;
+  max-width: 500px;
 }
 
 .advantages-title {
@@ -409,6 +410,7 @@ nav {
 
 .barber-master-wrapper {
   padding: 30px 82px 0;
+  text-align: center;
 }
 
 .barber-master {
