@@ -353,7 +353,7 @@ nav {
 .advantages-wrapper {
   display: flex;
   gap: 130px;
-  padding-left: 115px;
+  padding-left: 100px;
 }
 
 .advantages-number-wrapper {
