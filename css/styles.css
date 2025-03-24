@@ -8,6 +8,7 @@
   --light-color: #ffffff;
   --medium-color: #f7f7f7;
   --accent-color: #ff6c00;
+  --bg-color: #191c26;
 
   /* TYPEFACES */
 
@@ -184,7 +185,6 @@ address {
 .page-header {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #555555;
 }
 
 .header-wrapper {
@@ -248,7 +248,7 @@ nav {
 
 .hero-content-wrapper {
   flex-grow: 1;
-  background-color: #555555;
+  background-color: var(--bg-color);
   padding-top: 272px;
   padding-right: 100px;
   padding-bottom: 208px;
@@ -310,7 +310,7 @@ nav {
 /* ============= SERVICES AND PRICES ============= */
 
 .services {
-  background-color: #555555;
+  background-color: var(--bg-color);
 }
 
 .services-list-wrapper {
