@@ -147,6 +147,9 @@ address {
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .overline-theme-light {
@@ -178,6 +181,32 @@ address {
 .text {
   font-size: 14px;
   line-height: 1.86;
+}
+
+.pseudo::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+.pseudo-aside::before {
+  background-color: var(--primary-text-color);
+}
+
+.pseudo-theme-light::before {
+  background-color: var(--primary-text-color);
+}
+
+.pseudo-theme-dark::before {
+  background-color: var(--transparent-text-color);
+}
+
+.follow-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 /* ============= HEADER ============= */
@@ -244,6 +273,19 @@ nav {
 
 .aside {
   width: 100px;
+  height: 680px;
+  position: relative;
+}
+
+.hero .aside {
+  display: flex;
+}
+
+.hero .follow-list {
+  position: absolute;
+  bottom: 308px;
+  right: -83px;
+  transform: rotate(-90deg);
 }
 
 .hero-content-wrapper {
@@ -266,6 +308,12 @@ nav {
 .hero .subtitle {
   max-width: 360px;
 }
+
+/* .hero-content .overline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} */
 
 /* ============= ABOUT ============= */
 
@@ -450,6 +498,11 @@ nav {
 
 /* ============= BOOKING-CONTACTS ============= */
 
+.contacts a {
+  display: inline-flex;
+  align-items: center;
+}
+
 .booking-contacts {
   padding-top: 130px;
 
@@ -461,6 +514,29 @@ nav {
   gap: 130px;
 }
 
+.booking-contacts .link::before,
+.el-link::before {
+  content: '';
+  display: inline-block;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.address-text::before {
+  background-image: url('../images/map-pin.svg');
+}
+
+.info-text::before {
+  background-image: url('../images/phone.svg');
+}
+
+.el-link::before {
+  background-image: url('../images/mail.svg');
+}
+
 .booking {
   width: 570px;
 }
@@ -470,7 +546,7 @@ nav {
 }
 
 .contacts {
-  width: 270px;
+  min-width: 270px;
 }
 
 .contacts .section-title {
@@ -488,6 +564,12 @@ nav {
 
 .info-text {
   font-weight: normal;
+}
+
+address .list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 address .link,
