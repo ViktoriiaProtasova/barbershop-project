@@ -295,6 +295,7 @@ nav {
   padding-right: 100px;
   padding-bottom: 208px;
   padding-left: 100px;
+  background-image: url(../images/background/hero-slider-1x.jpg);
 }
 
 .hero-title {
@@ -358,7 +359,7 @@ nav {
 /* ============= SERVICES AND PRICES ============= */
 
 .services {
-  background-color: var(--bg-color);
+  background-image: url(../images/background/services-slider-1x.jpg);
 }
 
 .services-list-wrapper {
@@ -505,16 +506,16 @@ nav {
 
 .booking-contacts {
   padding-top: 130px;
-
-  background-color: #555555;
+  background-image: url(../images/background/contacts-slider-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .booking-contacts .wrapper {
   display: flex;
   gap: 130px;
 }
-
-.booking-contacts .link::before,
+c .booking-contacts .link::before,
 .el-link::before {
   content: '';
   display: inline-block;
