@@ -515,7 +515,6 @@ nav {
 
 .contacts a {
   display: inline-flex;
-  align-items: center;
 }
 
 .booking-contacts {
@@ -554,6 +553,11 @@ nav {
 
 .info-text::before {
   background-image: url('../images/phone.svg');
+}
+
+.link.info-text,
+.el-link {
+  align-items: center;
 }
 
 .el-link::before {
