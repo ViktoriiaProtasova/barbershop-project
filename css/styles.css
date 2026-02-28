@@ -520,6 +520,7 @@ nav {
 
 .booking-contacts {
   padding-top: 130px;
+  padding-bottom: 120px;
   background-color: var(--bg-color);
   background-image: linear-gradient(
       to right,
