@@ -185,7 +185,7 @@ address {
   line-height: 1.86;
 }
 
-.pseudo::before {
+.overline::before {
   content: '';
   display: inline-block;
   width: 60px;
@@ -193,15 +193,15 @@ address {
   margin-right: 20px;
 }
 
-.pseudo-aside::before {
+.overline-aside::before {
   background-color: var(--primary-text-color);
 }
 
-.pseudo-theme-light::before {
+.overline-theme-light::before {
   background-color: var(--primary-text-color);
 }
 
-.pseudo-theme-dark::before {
+.overline-theme-dark::before {
   background-color: var(--transparent-text-color);
 }
 
@@ -213,7 +213,7 @@ address {
 
 /* ============= HEADER ============= */
 
-.page-header {
+.header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
