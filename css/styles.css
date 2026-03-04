@@ -1,14 +1,15 @@
 :root {
   /* COLORS */
 
-  --primary-text-color: #303030;
   --text-color: #555555;
-  --light-text-color: #9da4bd;
+  --primary-text-color: #303030;
+  --light-text-color: #ffffff;
+  --medium-text-color: #9da4bd;
   --transparent-text-color: rgba(157, 164, 189, 0.6);
-  --light-color: #ffffff;
-  --medium-color: #f7f7f7;
+  --light-bg-color: #ffffff;
+  --medium-bg-color: #f7f7f7;
+  --dark-bg-color: #191c26;
   --accent-color: #ff6c00;
-  --bg-color: #191c26;
   --gradient-color: rgba(25, 28, 38, 0.2);
   --gradient-dark-color: rgba(25, 28, 38, 0.9);
 
@@ -25,7 +26,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 
-  background-color: var(--light-color);
+  background-color: var(--light-bg-color);
 }
 
 h1,
@@ -103,7 +104,7 @@ address {
 }
 
 .section-title,
-.advantages-title {
+.benefits-title {
   font-size: 42px;
   font-weight: 700;
   line-height: 1.17;
@@ -126,7 +127,7 @@ address {
 }
 
 .btn:is(:hover, :focus) {
-  color: var(--light-color);
+  color: var(--light-text-color);
 
   background-color: var(--accent-color);
   border-color: transparent;
@@ -140,7 +141,7 @@ address {
 }
 
 .btn-theme-dark {
-  color: var(--light-color);
+  color: var(--light-text-color);
 }
 
 .link {
@@ -174,8 +175,8 @@ address {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .overline-theme-light {
@@ -209,11 +210,11 @@ address {
 }
 
 .subtitle-theme-dark {
-  color: var(--light-text-color);
+  color: var(--medium-text-color);
 }
 
 .title-theme-dark {
-  color: var(--light-color);
+  color: var(--light-text-color);
 }
 
 .follow-list {
@@ -261,7 +262,7 @@ nav {
   letter-spacing: 0.1em;
   font-weight: 600;
   line-height: 1.33;
-  color: var(--light-color);
+  color: var(--light-text-color);
 }
 
 .menu-link:is(:hover, :focus) {
@@ -308,7 +309,7 @@ nav {
   padding-bottom: 208px;
   padding-left: 100px;
 
-  background-color: var(--bg-color);
+  background-color: var(--dark-bg-color);
   background-image: linear-gradient(
       var(--gradient-color),
       var(--gradient-color)
@@ -398,7 +399,7 @@ nav {
 }
 
 .services-text {
-  color: var(--light-text-color);
+  color: var(--medium-text-color);
   font-size: 18px;
   line-height: 1.67;
 }
@@ -408,60 +409,75 @@ nav {
   margin: 0 auto;
 }
 
-/* ============= ADVANTAGES ============= */
+/* ============= BENEFITS ============= */
 
-.advantages-wrapper {
+.benefits-wrapper {
   display: flex;
   gap: 130px;
   padding-left: 100px;
 }
 
-.advantages-number-list {
+.benefits-number-list {
   display: flex;
   flex-wrap: wrap;
   width: 370px;
 }
 
-.advantages-number-list .list-item {
-  background-color: var(--medium-color);
+.benefits-number-list .list-item {
+  background-color: var(--medium-bg-color);
 }
 
-.advantages-number-list .list-item:nth-child(even) {
+.benefits-number-list .list-item:nth-child(even) {
   margin-top: 30px;
 }
 
-.advantages-number-list .list-item:nth-child(odd) {
+.benefits-number-list .list-item:nth-child(odd) {
   margin-right: 30px;
 }
 
-.advantages-info-wrapper {
+.benefits-info-wrapper {
   max-width: 500px;
 }
 
-.advantages-title {
+.benefits-title {
   display: block;
   margin-bottom: 6px;
 
+  line-height: 1.36;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
-.advantages .list-item {
+.benefits-title::after {
+  content: '+';
+  position: absolute;
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.38;
+  letter-spacing: 0;
+  color: var(--accent-color);
+}
+
+.benefits .list-item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
 }
 
-.advantages-overline {
-  margin-bottom: 20px;
-
-  text-transform: none;
+.benefits-overline {
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 0;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
-/* ============= OUR BARBERS ============= */
+/* ============= OUR BARBERS =============== */
 
 .barbers {
-  background-color: var(--medium-color);
+  background-color: var(--medium-bg-color);
 }
 
 .barbers-list {
@@ -469,17 +485,17 @@ nav {
   gap: 30px;
 }
 
-.barbers-list .list-item {
+.barbers-list > .list-item {
   flex-basis: calc(100% - 60px / 3);
 }
 
-.barbers-master-wrapper {
+.barbers-item-wrapper {
   padding: 30px 82px 0;
 
   text-align: center;
 }
 
-.barbers-master {
+.barbers-item-title {
   margin-bottom: 8px;
 
   font-family: var(--main-font);
@@ -521,10 +537,10 @@ nav {
   padding-top: 130px;
   padding-bottom: 120px;
 
-  background-color: var(--bg-color);
+  background-color: var(--dark-bg-color);
   background-image: linear-gradient(
       to right,
-      var(--bg-color) 0% 50%,
+      var(--dark-bg-color) 0% 50%,
       var(--gradient-dark-color) 50% 100%
     ),
     url(../images/background/contacts-slider-1x.jpg);
@@ -535,34 +551,6 @@ nav {
 .booking-contacts-wrapper {
   display: flex;
   gap: 130px;
-}
-
-.booking-contacts .link::before,
-.el-link::before {
-  content: '';
-  display: inline-block;
-  margin-right: 16px;
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.address-text::before {
-  background-image: url('../images/map-pin.svg');
-}
-
-.info-text::before {
-  background-image: url('../images/phone.svg');
-}
-
-.link.info-text,
-.el-link {
-  align-items: center;
-}
-
-.el-link::before {
-  background-image: url('../images/mail.svg');
 }
 
 .booking {
@@ -581,31 +569,55 @@ nav {
   margin-bottom: 40px;
 }
 
-.contacts a {
-  display: inline-flex;
-}
-
-.address-text,
-.info-text {
-  color: var(--light-text-color);
-  font-size: 18px;
-  line-height: 1.67;
-  font-weight: 700;
-}
-
-.info-text {
-  font-weight: normal;
-}
-
-address .list {
+.address-list {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-address .link,
+.address-list a {
+  display: inline-flex;
+
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--medium-text-color);
+}
+
+.address-list a::before {
+  content: '';
+  display: inline-block;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.address-link::before {
+  background-image: url('../images/map-pin.svg');
+}
+
+.info-link::before {
+  background-image: url('../images/phone.svg');
+}
+
+.el-link::before {
+  background-image: url('../images/mail.svg');
+}
+
+.address-link {
+  font-weight: 700;
+}
+
+.info-link,
 .el-link {
-  color: var(--light-text-color);
+  align-items: center;
+}
+
+.info-text {
+  color: var(--medium-text-color);
+  font-size: 18px;
+  line-height: 1.67;
 }
 
 /* ============= FOOTER ============= */
@@ -620,5 +632,5 @@ footer {
 }
 
 .copyright {
-  color: var(--light-text-color);
+  color: var(--medium-text-color);
 }
