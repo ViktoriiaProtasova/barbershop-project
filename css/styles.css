@@ -19,6 +19,10 @@
   --main-font: 'Open Sans', sans-serif;
 }
 
+* {
+  outline: 2px solid #ff6c00;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -52,6 +56,10 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 img {
@@ -101,13 +109,13 @@ address {
 
 .section-title {
   margin-bottom: 20px;
+  line-height: 1.17;
 }
 
 .section-title,
 .benefits-title {
   font-size: 42px;
   font-weight: 700;
-  line-height: 1.17;
 }
 
 .btn {
@@ -295,11 +303,16 @@ nav {
   display: flex;
 }
 
+.aside .overline {
+  margin-bottom: 0;
+}
+
 .hero .follow-list {
   position: absolute;
-  bottom: 308px;
-  right: -83px;
+  bottom: 40px;
+  left: 52.9px;
   transform: rotate(-90deg);
+  transform-origin: left;
 }
 
 .hero-content-wrapper {
@@ -444,6 +457,7 @@ nav {
   margin-bottom: 6px;
 
   line-height: 1.36;
+  letter-spacing: 0.05em;
   color: var(--primary-text-color);
   text-align: center;
 }
@@ -576,11 +590,10 @@ nav {
 }
 
 .address-list a {
-  display: inline-flex;
-
   font-size: 18px;
   line-height: 1.67;
   color: var(--medium-text-color);
+  vertical-align: middle;
 }
 
 .address-list a::before {
@@ -591,6 +604,7 @@ nav {
   height: 24px;
   background-repeat: no-repeat;
   background-size: contain;
+  vertical-align: middle;
 }
 
 .address-link::before {
@@ -606,6 +620,7 @@ nav {
 }
 
 .address-link {
+  display: inline-flex;
   font-weight: 700;
 }
 
@@ -629,6 +644,10 @@ footer {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-wrapper .overline {
+  margin-bottom: 0;
 }
 
 .copyright {
