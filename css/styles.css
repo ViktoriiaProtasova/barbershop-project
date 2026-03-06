@@ -248,13 +248,13 @@ nav {
   display: flex;
   align-items: center;
   margin-left: 200px;
+  padding-bottom: 8px;
 }
 
 .menu {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding-bottom: 8px;
 }
 
 .menu-link {
