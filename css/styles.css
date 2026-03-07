@@ -55,7 +55,7 @@ ol {
 }
 
 a {
-  display: inline-block;
+  display: block;
 }
 
 img {
@@ -585,25 +585,32 @@ nav {
 }
 
 .address-list a {
+  display: flex;
   font-size: 18px;
   line-height: 1.67;
   color: var(--medium-text-color);
-  vertical-align: middle;
 }
 
 .address-list a::before {
   content: '';
-  display: inline-block;
   margin-right: 16px;
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
   background-size: contain;
-  vertical-align: middle;
+}
+
+.address-link {
+  font-weight: 700;
 }
 
 .address-link::before {
   background-image: url('../images/map-pin.svg');
+}
+
+.info-link,
+.el-link {
+  align-items: center;
 }
 
 .info-link::before {
@@ -612,16 +619,6 @@ nav {
 
 .el-link::before {
   background-image: url('../images/mail.svg');
-}
-
-.address-link {
-  display: inline-flex;
-  font-weight: 700;
-}
-
-.info-link,
-.el-link {
-  align-items: center;
 }
 
 .info-text {
