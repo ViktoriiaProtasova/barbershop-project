@@ -54,10 +54,6 @@ ol {
   padding-left: 0;
 }
 
-a {
-  display: block;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -231,6 +227,7 @@ address {
 
 .header {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .header-wrapper {
@@ -425,21 +422,24 @@ nav {
   padding-left: 100px;
 }
 
-.benefits-number-list {
+.benefits-list {
   display: flex;
   flex-wrap: wrap;
   width: 370px;
 }
 
-.benefits-number-list .list-item {
+.benefits-list > .list-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+
   background-color: var(--medium-bg-color);
 }
-
-.benefits-number-list .list-item:nth-child(even) {
+.benefits-list > .list-item:nth-child(even) {
   margin-top: 30px;
 }
 
-.benefits-number-list .list-item:nth-child(odd) {
+.benefits-list > .list-item:nth-child(odd) {
   margin-right: 30px;
 }
 
@@ -466,12 +466,6 @@ nav {
   line-height: 1.38;
   letter-spacing: 0;
   color: var(--accent-color);
-}
-
-.benefits .list-item {
-  width: 170px;
-  height: 133px;
-  padding: 20px 24px;
 }
 
 .benefits-overline {
@@ -578,10 +572,8 @@ nav {
   margin-bottom: 40px;
 }
 
-.address-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+.address-list > .list-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .address-list a {
@@ -604,13 +596,13 @@ nav {
   font-weight: 700;
 }
 
-.address-link::before {
-  background-image: url('../images/map-pin.svg');
-}
-
 .info-link,
 .el-link {
   align-items: center;
+}
+
+.address-link::before {
+  background-image: url('../images/map-pin.svg');
 }
 
 .info-link::before {
