@@ -113,7 +113,7 @@ address {
 .btn {
   min-width: 160px;
   height: 40px;
-  padding: 0 18px;
+  padding: 12px 18px;
 
   font-size: 12px;
   line-height: 1.33;
@@ -189,7 +189,6 @@ address {
 
 .overline::before {
   content: '';
-  display: inline-block;
   width: 60px;
   height: 1px;
   margin-right: 20px;
