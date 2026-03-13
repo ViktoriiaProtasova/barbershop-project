@@ -127,7 +127,7 @@ address {
   border-radius: 25px;
 }
 
-.btn:is(:hover, :focus) {
+.btn:is(:hover, :focus-visible) {
   color: var(--light-text-color);
 
   background-color: var(--accent-color);
@@ -150,8 +150,7 @@ address {
   color: var(--primary-text-color);
 }
 
-.link:is(:hover, :focus),
-.contacts-link:is(:hover, :focus) {
+.link:is(:hover, :focus-visible) {
   color: var(--accent-color);
 }
 
@@ -192,7 +191,7 @@ address {
   content: '';
   width: 60px;
   height: 1px;
-  margin-right: 20px;
+
   background-color: var(--primary-text-color);
 }
 
@@ -263,7 +262,7 @@ nav {
   color: var(--light-text-color);
 }
 
-.menu-link:is(:hover, :focus) {
+.menu-link:is(:hover, :focus-visible) {
   color: var(--accent-color);
 }
 
@@ -314,7 +313,8 @@ nav {
       var(--gradient-color),
       var(--gradient-color)
     ),
-    url(../images/background/hero-slider-1x.jpg);
+    url(../images/background/hero-slider1-1x.jpg);
+  background-size: cover;
 }
 
 .hero-title {
@@ -328,12 +328,6 @@ nav {
 .hero .subtitle {
   max-width: 360px;
 }
-
-/* .hero-content .overline {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-} */
 
 /* ============= ABOUT ============= */
 
@@ -368,15 +362,18 @@ nav {
 
 .services {
   background-image: linear-gradient(
-      var(--gradient-dark-color, var(--gradient-dark-color))
+      var(--gradient-dark-color),
+      var(--gradient-dark-color)
     ),
     url(../images/background/services-slider-1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .services-list-wrapper {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100% - 30px) / 2);
 }
 
 .services .section-title,
@@ -388,7 +385,10 @@ nav {
   padding: 30px 20px;
   flex-basis: calc((100% - 30px) / 2);
 
-  background-image: linear-gradient(#171a24, var(--gradient-color));
+  background-image: linear-gradient(
+    var(--gradient-dark-color),
+    var(--gradient-color)
+  );
 }
 
 .services-item {
@@ -408,7 +408,9 @@ nav {
 
 .services .btn {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 /* ============= BENEFITS ============= */
@@ -447,6 +449,7 @@ nav {
 }
 
 .benefits-title {
+  position: relative;
   display: block;
   margin-bottom: 6px;
 
@@ -497,7 +500,7 @@ nav {
 }
 
 .barbers-name-wrapper {
-  padding: 30px 82px 0;
+  padding: 30px 30px 0;
 
   text-align: center;
 }
@@ -519,23 +522,18 @@ nav {
   color: var(--accent-color);
 }
 
-.barbers-socials {
+.barbers-socials-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.barbers-socials-item {
-  width: 44px;
-  height: 44px;
 }
 
 .barbers-socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
   background-color: var(--light-bg-color);
@@ -547,7 +545,7 @@ nav {
   fill: var(--primary-text-color);
 }
 
-.barbers-socials-link:is(:hover, :focus) .barbers-socials-icon {
+.barbers-socials-link:is(:hover, :focus-visible) .barbers-socials-icon {
   fill: var(--accent-color);
 }
 
@@ -609,34 +607,26 @@ nav {
   margin-bottom: 40px;
 }
 
-.address-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.address-list > .list-item:not(:last-child) {
+.contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.address-list a {
+.contacts-link {
+  display: flex;
+  align-items: center;
+
   font-size: 18px;
   line-height: 1.67;
   color: var(--medium-text-color);
 }
 
 .address-link {
+  align-items: flex-start;
   font-weight: 700;
 }
 
-.contacts-item {
-  display: flex;
-  color: var(--medium-text-color);
-  cursor: pointer;
-}
-
-.contacts-item:not(:first-child) {
-  align-items: center;
+.el-link {
+  text-decoration: underline;
 }
 
 .contacts-icon {
@@ -644,20 +634,19 @@ nav {
   width: 24px;
   height: 24px;
   margin-right: 16px;
+
   stroke: currentColor;
   fill: transparent;
 }
 
-.contacts-item:is(:hover, :focus) .contacts-icon,
-.contacts-item:is(:hover, :focus) .contacts-link {
-  stroke: var(--accent-color);
-  color: var(--accent-color);
+.contacts-text {
+  white-space: nowrap;
 }
 
 .info-text {
-  color: var(--medium-text-color);
   font-size: 18px;
   line-height: 1.67;
+  color: var(--medium-text-color);
 }
 
 /* ============= FOOTER ============= */
