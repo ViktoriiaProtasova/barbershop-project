@@ -27,6 +27,10 @@
 
   --heading-font: 'Raleway', sans-serif;
   --main-font: 'Open Sans', sans-serif;
+
+  /* TRANSITIONS */
+
+  --transition-function: ;
 }
 
 body {
@@ -135,6 +139,7 @@ address {
   background-color: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  transition: background-color 250ms linear, border-color 250ms linear;
 }
 
 .btn:is(:hover, :focus-visible) {
@@ -158,6 +163,7 @@ address {
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
+  transition: color 250ms linear;
 }
 
 .link:is(:hover, :focus-visible) {
@@ -231,6 +237,11 @@ address {
 /* ============= HEADER ============= */
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -454,6 +465,10 @@ address {
 }
 
 .benefits-list > .list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 133px;
   padding: 20px 24px;
@@ -482,7 +497,6 @@ address {
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--primary-text-color);
-  text-align: center;
 }
 
 .benefits-title::after {
@@ -495,7 +509,7 @@ address {
   color: var(--accent-color);
 }
 
-.benefits-overline {
+.benefits-text {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
@@ -568,6 +582,7 @@ address {
   width: 20px;
   height: 20px;
   fill: var(--primary-text-color);
+  transition: fill 250ms linear, box-shadow 250ms linear;
 }
 
 .barbers-socials-link:is(:hover, :focus-visible) .barbers-socials-icon {
