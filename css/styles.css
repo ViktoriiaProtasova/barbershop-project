@@ -230,8 +230,8 @@ address {
 
 .follow-list {
   display: flex;
-  align-items: center;
   gap: 40px;
+  text-transform: none;
 }
 
 /* ============= HEADER ============= */
@@ -297,10 +297,12 @@ address {
 }
 
 .aside {
-  position: relative;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
   width: 100px;
-  height: 680px;
+  padding-left: 52.9px;
+  padding-bottom: 40px;
 }
 
 .aside .overline {
@@ -308,11 +310,8 @@ address {
 }
 
 .hero .follow-list {
-  position: absolute;
-  bottom: 40px;
-  left: 52.9px;
   transform: rotate(-90deg);
-  transform-origin: left;
+  transform-origin: top left;
 }
 
 .hero-content-wrapper {
@@ -328,6 +327,7 @@ address {
       var(--gradient-color)
     ),
     url(../images/background/hero-slider1-1x.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
