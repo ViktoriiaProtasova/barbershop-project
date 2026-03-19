@@ -23,17 +23,17 @@
     <header class="header">
       <div class="container header-wrapper">
         <nav class="header-nav">
-          <a href="#" class="link logo" aria-label="Barbershop home"
-            ><svg
-              class="logo-icon"
-              width="70"
-              height="56"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <use href="./images/sprite.svg#icon-logo"></use>
-            </svg>
-          </a>
+          <svg
+            class="logo logo-icon"
+            width="70"
+            height="56"
+            aria-hidden="true"
+            focusable="false"
+            aria-label="Barbershop home"
+          >
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+
           <ul class="list menu">
             <li class="menu-item">
               <a href="#about" class="link menu-link">About</a>
@@ -56,7 +56,11 @@
           <a href="tel:+380441111111" class="link menu-link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="btn modal-btn btn-theme-dark">
+          <button
+            type="button"
+            class="btn modal-btn btn-theme-dark"
+            data-open-modal
+          >
             Online-booking
           </button>
         </div>
@@ -137,7 +141,7 @@
               the same wave" with clients. Therefore, we are always ready to
               improve everyone who comes to us!
             </p>
-            <button type="button" class="btn btn-theme-light">
+            <button type="button" class="btn btn-theme-light" data-open-modal>
               Online-booking
             </button>
           </div>
@@ -193,7 +197,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-theme-dark">
+          <button type="button" class="btn btn-theme-dark" data-open-modal>
             Online-booking
           </button>
         </div>
@@ -244,12 +248,22 @@
           <h2 class="section-title">Our barbers</h2>
           <ul class="list barbers-list">
             <li class="list-item">
-              <img
-                src="./images/barbers/john-smith.jpg"
-                alt="The barber is cutting a client"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-overlay-wrapper">
+                <img
+                  src="./images/barbers/john-smith.jpg"
+                  alt="The barber is cutting a client"
+                  width="370"
+                  height="346"
+                />
+                <div class="barbers-overlay">
+                  <p class="barbers-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, cupiditate, quia sit aliquid quos dignissimos
+                    repudiandae cum esse eaque vitae veniam nesciunt. Quas
+                    tenetur sunt impedit delectus optio dolore minima.
+                  </p>
+                </div>
+              </div>
               <div class="barbers-name-wrapper">
                 <h3 class="barbers-name-title">John Smith</h3>
                 <p class="barbers-name-subtitle">Extreme Barber</p>
@@ -338,12 +352,23 @@
             </li>
 
             <li class="list-item">
-              <img
-                src="./images/barbers/michele-doe.jpg"
-                alt="The barber is cutting a client"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-overlay-wrapper">
+                <img
+                  src="./images/barbers/michele-doe.jpg"
+                  alt="The barber is cutting a client"
+                  width="370"
+                  height="346"
+                />
+                <div class="barbers-overlay">
+                  <p class="barbers-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, cupiditate, quia sit aliquid quos dignissimos
+                    repudiandae cum esse eaque vitae veniam nesciunt. Quas
+                    tenetur sunt impedit delectus optio dolore minima.
+                  </p>
+                </div>
+              </div>
+
               <div class="barbers-name-wrapper">
                 <h3 class="barbers-name-title">Michele Doe</h3>
                 <p class="barbers-name-subtitle">Extreme Barber</p>
@@ -432,12 +457,23 @@
             </li>
 
             <li class="list-item">
-              <img
-                src="./images/barbers/alan-black.jpg"
-                alt="The barber is cutting a client"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-overlay-wrapper">
+                <img
+                  src="./images/barbers/alan-black.jpg"
+                  alt="The barber is cutting a client"
+                  width="370"
+                  height="346"
+                />
+                <div class="barbers-overlay">
+                  <p class="barbers-overlay-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, cupiditate, quia sit aliquid quos dignissimos
+                    repudiandae cum esse eaque vitae veniam nesciunt. Quas
+                    tenetur sunt impedit delectus optio dolore minima.
+                  </p>
+                </div>
+              </div>
+
               <div class="barbers-name-wrapper">
                 <h3 class="barbers-name-title">Alan Black</h3>
                 <p class="barbers-name-subtitle">Extreme Barber</p>
@@ -663,5 +699,18 @@
         </ul>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-close-modal>
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
