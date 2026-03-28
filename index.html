@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -702,13 +702,54 @@
 
     <!-- MODAL WINDOW -->
 
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop" data-backdrop>
       <div role="dialog" aria-modal="true" class="modal">
         <button type="button" class="modal-close-btn" data-close-modal>
           <svg class="modal-close-icon" width="24" height="24">
             <use href="./images/sprite.svg#icon-x"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <label
+            ><span>Name*</span>
+            <svg class="icon icon-person">
+              <use xlink:href="./images/sprite.svg#icon-person"></use>
+            </svg>
+            <input
+              type="text"
+              name="user_name"
+              class="modal-input"
+              placeholder="John"
+              required
+            />
+          </label>
+          <label
+            ><span>E-mail*</span>
+            <svg class="icon icon-email">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+            <input
+              type="email"
+              name="user_email"
+              class="modal-input"
+              placeholder="yourmail@mail.com "
+              required
+            />
+          </label>
+          <label for="user-phone">Phone number*</label>
+          <svg class="icon icon-phone">
+            <use xlink:href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+          <input
+            type="tel"
+            name="user_tel"
+            class="modal-input"
+            placeholder="920-111-11"
+            required
+            id="user-phone"
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
