@@ -813,20 +813,38 @@ footer {
   fill: var(--accent-color);
 }
 
-.modal-form {
+.modal-title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.modal-list {
+  margin-bottom: 30px;
+}
+
+.modal-field:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .modal-input {
   width: 100%;
   height: 40px;
-  padding-left: 15px;
+  padding-left: 38px;
+
+  color: var(--primary-text-color);
+
   border: 1px solid var(--primary-text-color);
   border-radius: 3px;
-  margin-bottom: 20px;
-  color: var(--primary-text-color);
+  outline: transparent;
+  transition: border-color var(--transition-function);
 }
 
-.modal-input::placeholder {
+.modal-input::placeholder,
+.modal-comment::placeholder {
   color: var(--border-color);
 }
 
@@ -837,13 +855,43 @@ footer {
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(255, 99, 71, 0.3);
 }
+
+.modal-input:focus-visible {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus-visible + .icon {
+  fill: var(--accent-color);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
 .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 18px;
   height: 24px;
+  fill: currentColor;
+  transition: fill var(--transition-function);
 }
 
-.icon-person {
+.modal-comment {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+
+  color: var(--primary-text-color);
+
+  border: 1px solid var(--primary-text-color);
+  border-radius: 3px;
+  resize: none;
+  outline: transparent;
 }
 
-.icon-email {
+.modal-comment:focus-visible {
+  border-color: var(--accent-color);
 }

@@ -710,44 +710,71 @@
           </svg>
         </button>
         <form class="modal-form">
-          <label
-            ><span>Name*</span>
-            <svg class="icon icon-person">
-              <use xlink:href="./images/sprite.svg#icon-person"></use>
-            </svg>
-            <input
-              type="text"
-              name="user_name"
-              class="modal-input"
-              placeholder="John"
-              required
-            />
-          </label>
-          <label
-            ><span>E-mail*</span>
-            <svg class="icon icon-email">
-              <use href="./images/sprite.svg#icon-email"></use>
-            </svg>
-            <input
-              type="email"
-              name="user_email"
-              class="modal-input"
-              placeholder="yourmail@mail.com "
-              required
-            />
-          </label>
-          <label for="user-phone">Phone number*</label>
-          <svg class="icon icon-phone">
-            <use xlink:href="./images/sprite.svg#icon-phone"></use>
-          </svg>
-          <input
-            type="tel"
-            name="user_tel"
-            class="modal-input"
-            placeholder="920-111-11"
-            required
-            id="user-phone"
-          />
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
+          <ul class="list modal-list">
+            <li class="modal-field">
+              <label
+                ><span>Name*</span>
+                <span class="input-wrapper">
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="modal-input"
+                    placeholder="John"
+                    required
+                  />
+                  <svg class="icon icon-person">
+                    <use xlink:href="./images/sprite.svg#icon-person"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="modal-field">
+              <label
+                ><span>E-mail*</span>
+                <span class="input-wrapper">
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="modal-input"
+                    placeholder="yourmail@mail.com "
+                    required
+                  />
+                  <svg class="icon icon-email">
+                    <use href="./images/sprite.svg#icon-email"></use>
+                  </svg>
+                </span>
+              </label>
+            </li>
+            <li class="modal-field">
+              <label for="user-phone">Phone number*</label>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="user_tel"
+                  class="modal-input"
+                  placeholder="920-111-11"
+                  required
+                  id="user-phone"
+                />
+                <svg class="icon icon-phone">
+                  <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <div class="modal-field">
+            <label
+              ><span>Add comment</span
+              ><textarea
+                name="user_comment"
+                class="modal-comment"
+                placeholder="Your comment"
+              ></textarea>
+            </label>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
