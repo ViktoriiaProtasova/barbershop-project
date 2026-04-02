@@ -902,11 +902,6 @@ footer {
   gap: 8px;
 }
 
-.user-policy {
-  position: absolute;
-  appearance: none;
-}
-
 .user-policy-text .link {
   text-decoration: underline;
   cursor: pointer;
