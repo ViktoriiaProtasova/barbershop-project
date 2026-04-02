@@ -613,6 +613,34 @@
         <div class="container booking-contacts-wrapper">
           <section class="booking">
             <h2 class="section-title title-theme-dark">Online-booking</h2>
+            <form class="booking-form">
+              <div class="booking-field-wrapper">
+                <label class="booking-field-label input"
+                  ><input
+                    type="text"
+                    name="user_name"
+                    class="booking-field"
+                    placeholder=" "
+                  /><span class="booking-field-name">Name*</span></label
+                >
+                <label class="booking-field-label input"
+                  ><input
+                    type="tel"
+                    name="user_tel"
+                    class="booking-field"
+                    placeholder=" "
+                  /><span class="booking-field-name">Phone*</span></label
+                >
+              </div>
+              <label class="booking-field-label message"
+                ><span class="booking-message-name">Message</span
+                ><textarea
+                  name="user_message"
+                  class="booking-field booking-message"
+                ></textarea>
+              </label>
+              <button type="submit" class="btn btn-theme-dark">Send</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="section-title title-theme-dark">Contacts</h2>
@@ -702,7 +730,7 @@
 
     <!-- MODAL WINDOW -->
 
-    <div class="backdrop" data-backdrop>
+    <div class="backdrop is-hidden" data-backdrop>
       <div role="dialog" aria-modal="true" class="modal">
         <button type="button" class="modal-close-btn" data-close-modal>
           <svg class="modal-close-icon" width="24" height="24">
