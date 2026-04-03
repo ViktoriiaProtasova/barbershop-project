@@ -667,34 +667,32 @@ address {
 }
 
 .booking-form {
-}
-
-.booking-field-wrapper {
   display: flex;
-  gap: 30px;
-}
-
-.booking-field {
-  background-color: transparent;
-  border-color: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--medium-border-color);
-  padding: 0;
-  margin: 0;
-  height: 24px;
-  color: var(--light-text-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .booking-field-label {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  width: calc((100% - 30px) / 2);
   margin-bottom: 44px;
+
   color: var(--medium-border-color);
 }
 
-.booking-field-label.input {
-  width: calc((100% - 30px) / 2);
+.booking-field {
+  width: 100%;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+
+  color: var(--light-text-color);
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--medium-border-color);
+  outline: transparent;
+  transition: border-color var(--transition-function);
 }
 
 .booking-field-name {
@@ -707,13 +705,16 @@ address {
     color var(--transition-function);
 }
 
-.booking-field-name,
-.booking-message {
+.booking-field-name {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.booking-field:focus {
+  border-color: var(--light-bg-color);
 }
 
 .booking-field:focus + .booking-field-name {
@@ -725,20 +726,14 @@ address {
   transform: translateY(-24px);
 }
 
-.booking-message {
+.booking-field-label.message {
   width: 100%;
+}
+
+.booking-message {
   height: 76px;
-  resize: none;
   margin-bottom: 44px;
-}
-
-.booking-message::placeholder {
-  transition: color var(--transition-function);
-  color: var(--medium-border-color);
-}
-
-.booking-message:focus::placeholder {
-  color: var(--light-text-color);
+  resize: none;
 }
 
 .contacts {
