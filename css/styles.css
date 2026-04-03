@@ -992,9 +992,14 @@ footer {
   transition:
     fill var(--transition-function),
     border-color var(--transition-function);
+  cursor: pointer;
 }
 
 .user-policy:checked + .icon-check {
   border-color: var(--accent-color);
   fill: var(--primary-text-color);
+}
+
+.user-policy:focus + .icon-check {
+  border-color: var(--accent-color);
 }
