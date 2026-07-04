@@ -74,6 +74,8 @@ ol {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -107,14 +109,14 @@ address {
 /* ============= COMPONENTS ============= */
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
   margin: 0 auto;
 }
 
 .section {
-  padding: 120px 0;
+  padding: 84px 0;
 }
 
 .section-title {
@@ -239,15 +241,9 @@ address {
 /* ============= HEADER ============= */
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: none;
 }
-
+/* 
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -290,7 +286,7 @@ address {
   align-items: center;
   gap: 40px;
   margin-right: 20px;
-}
+} */
 
 /* ============= HERO ============= */
 
@@ -562,14 +558,8 @@ address {
   transform: scale(1);
 }
 
-.barbers-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .barbers-list > .list-item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  max-width: 100%;
 }
 
 .barbers-name-wrapper {
