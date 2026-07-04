@@ -13,47 +13,12 @@
 
   /* ============= HEADER ============= */
 
-  .header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
-
   .logo {
     margin-right: 130px;
   }
 
-  .logo-icon {
-    fill: currentColor;
-  }
-
-  .menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .menu-link {
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    line-height: 1.33;
-    color: var(--light-text-color);
-  }
-
   .header-contact-wrapper {
-    display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 40px;
     margin-right: 20px;
   }

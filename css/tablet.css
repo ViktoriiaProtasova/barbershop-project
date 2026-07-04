@@ -29,38 +29,24 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding-right: 0;
     padding-left: 39px;
   }
 
   .header-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .logo {
     margin-right: 62px;
   }
 
-  .logo-icon {
-    fill: currentColor;
-  }
-
   .menu {
     display: flex;
     gap: 30px;
     align-items: center;
-  }
-
-  .menu-link {
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    line-height: 1.33;
-    color: var(--light-text-color);
   }
 
   .header-contact-wrapper {

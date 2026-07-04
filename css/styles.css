@@ -243,30 +243,9 @@ address {
 .header {
   display: none;
 }
-/* 
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-right: 130px;
-}
 
 .logo-icon {
   fill: currentColor;
-}
-
-.menu {
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }
 
 .menu-link {
@@ -280,6 +259,26 @@ address {
   line-height: 1.33;
   color: var(--light-text-color);
 }
+
+/* 
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 130px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+
 
 .header-contact-wrapper {
   display: flex;
