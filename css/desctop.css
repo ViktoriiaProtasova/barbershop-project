@@ -23,6 +23,29 @@
     margin-right: 20px;
   }
 
+  /* ============= HERO ============= */
+
+  .aside {
+    padding-left: 53px;
+  }
+
+  .hero-content-wrapper {
+    padding-bottom: 208px;
+    padding-left: 100px;
+  }
+
+  .hero-title {
+    margin-bottom: 20px;
+
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+  }
+
+  .hero .subtitle {
+    max-width: 360px;
+  }
+
   /* ============= OUR BARBERS =============== */
 
   .barbers-list {

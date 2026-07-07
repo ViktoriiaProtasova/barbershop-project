@@ -57,6 +57,39 @@
     margin-right: 18px;
   }
 
+  /* ============= HERO ============= */
+
+  .aside {
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+    padding-left: 23px;
+    padding-bottom: 40px;
+  }
+
+  .aside .overline {
+    margin-bottom: 0;
+  }
+
+  .hero .follow-list {
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
+  }
+
+  .hero-content-wrapper {
+    flex-grow: 1;
+    padding-top: 272px;
+    padding-bottom: 237px;
+    padding-left: 123px;
+
+    background-color: var(--dark-bg-color);
+    background-image:
+      linear-gradient(var(--gradient-color), var(--gradient-color)),
+      url(../images/background/hero-slider1-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   /* ============= OUR BARBERS =============== */
 
   @media screen and (max-width: 1199px) {
