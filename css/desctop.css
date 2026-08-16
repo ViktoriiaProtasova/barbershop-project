@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   /* ============= COMPONENTS ============= */
 
   .container {
@@ -9,6 +9,11 @@
 
   .section {
     padding: 120px 0;
+  }
+
+  .section-title,
+  .benefits-title {
+    font-size: 42px;
   }
 
   /* ============= HEADER ============= */
@@ -45,6 +50,19 @@
   .hero .subtitle {
     max-width: 360px;
   }
+
+  /* ============= ABOUT ============= */
+
+  .about-image-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  /* ============= SERVICES AND PRICES ============= */
 
   /* ============= OUR BARBERS =============== */
 

@@ -4,4 +4,32 @@
   .container {
     max-width: 480px;
   }
+
+  /* ============= HERO ============= */
+
+  .hero-content {
+    max-width: 300px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero .subtitle {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    padding-right: 100px;
+    padding-left: 31px;
+  }
+
+  /* ============= ABOUT ============= */
+
+  .about-image-wrapper {
+    display: flex;
+  }
+
+  /* ============= SERVICES AND PRICES ============= */
 }

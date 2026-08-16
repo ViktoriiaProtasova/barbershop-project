@@ -71,6 +71,10 @@
     margin-bottom: 0;
   }
 
+  .container.hero-wrapper {
+    padding-right: 0px;
+  }
+
   .hero .follow-list {
     transform: rotate(-90deg) translateY(100%);
     transform-origin: bottom left;
@@ -89,6 +93,36 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  /* ============= ABOUT ============= */
+
+  .about-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-image-wrapper {
+    display: block;
+  }
+
+  .about-item {
+    margin-bottom: 30px;
+  }
+
+  .about-info-wrapper {
+    max-width: 470px;
+  }
+
+  .about-text {
+    margin-bottom: 42px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  /* ============= SERVICES AND PRICES ============= */
 
   /* ============= OUR BARBERS =============== */
 
